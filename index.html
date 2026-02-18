@@ -3,75 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RUGamble.com | Premium Domain</title>
+    <title>RUGamble.com | Premium Asset</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body, html { height: 100%; font-family: 'Georgia', serif; background-color: #000; }
         
-        /* پس‌زمینه با ترکیب عکس و گرادینت قدرتمند */
-        .hero-bg { 
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(40,0,0,0.9) 0%, rgba(0,0,0,0.95) 100%), 
-                        url('https://images.pexels.com/photos/279009/pexels-photo-279009.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=1600');
-            background-size: cover; background-position: center; z-index: -1;
+        /* پس‌زمینه رزرو: اگر عکس لود نشود، این رنگ‌ها دیده می‌شوند */
+        body { 
+            background: #000; 
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
         }
 
-        .container { height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .bg-layer {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            /* گرادینت زرشکی تیره برای زمانی که عکس لود نمیشه */
+            background: radial-gradient(circle, #2a0000 0%, #000000 100%);
+            z-index: -1;
+        }
+
+        .bg-image {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            /* استفاده از عکسی با کنتراست بالا */
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), 
+                              url('https://www.casino.org/blog/wp-content/uploads/blackjack-table.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
 
         .premium-card { 
-            background: rgba(0, 0, 0, 0.85);
-            padding: 50px 35px; border-radius: 4px; text-align: center;
-            max-width: 440px; width: 90%;
+            background: rgba(10, 10, 10, 0.9);
+            padding: 50px 35px;
+            border-radius: 4px;
+            text-align: center;
+            max-width: 450px; width: 92%;
             border: 2px solid #d4af37;
-            box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
         }
 
-        .label { 
-            color: #d4af37; font-weight: bold; font-size: 0.7em;
-            text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;
-        }
-
-        h1 { font-size: 2.6em; color: #fff; margin-bottom: 15px; }
+        .label { color: #d4af37; letter-spacing: 5px; font-size: 0.7em; margin-bottom: 20px; text-transform: uppercase; }
+        h1 { font-size: 2.5em; color: #fff; margin-bottom: 15px; }
         .gold { color: #d4af37; }
-
-        p { color: #e0e0e0; margin-bottom: 35px; line-height: 1.7; font-style: italic; }
+        p { color: #ccc; margin-bottom: 35px; font-style: italic; line-height: 1.6; }
 
         .btn { 
             display: block; padding: 18px; margin: 15px 0; border-radius: 4px;
-            text-decoration: none; font-weight: bold; font-size: 1em;
+            text-decoration: none; font-weight: bold; font-size: 1.1em;
             transition: 0.3s; text-transform: uppercase; letter-spacing: 2px;
         }
 
-        /* دکمه زرشکی متالیک */
+        /* زرشکی لوکس */
         .btn-afternic { 
-            background: linear-gradient(to bottom, #8b0000, #4a0000);
+            background: linear-gradient(#8b0000, #4a0000);
             color: #ffd700; border: 1px solid #d4af37;
         }
-        .btn-afternic:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
-        /* دکمه سبز یشمی عمیق */
+        /* سبز یشمی عمیق */
         .btn-sedo { 
-            background: linear-gradient(to bottom, #004d40, #00251a);
-            color: #e0f2f1; border: 1px solid #26a69a;
+            background: linear-gradient(#004d40, #00251a);
+            color: #fff; border: 1px solid #26a69a;
         }
-        .btn-sedo:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
-        .secure-footer { margin-top: 30px; font-size: 0.7em; color: #d4af37; opacity: 0.8; }
+        .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
+        .footer { margin-top: 30px; font-size: 0.7em; color: #d4af37; opacity: 0.6; letter-spacing: 2px; }
     </style>
 </head>
 <body>
-    <div class="hero-bg"></div>
-    <div class="container">
-        <div class="premium-card">
-            <div class="label">Exclusive Domain Offer</div>
-            <h1>RU<span class="gold">Gamble</span>.com</h1>
-            <p>A high-stakes, 18-year-old digital asset. Perfect for elite gaming platforms and global casino networks.</p>
-            
-            <a href="https://www.afternic.com/domain/rugamble.com" class="btn btn-afternic">PURCHASE VIA AFTERNIC</a>
-            <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">PURCHASE VIA SEDO</a>
-            
-            <div class="secure-footer">ESTABLISHED 2008 • SECURE TRANSFER</div>
-        </div>
+    <div class="bg-layer"></div>
+    <div class="bg-image"></div>
+    
+    <div class="premium-card">
+        <div class="label">Exclusive Domain Offer</div>
+        <h1>RU<span class="gold">Gamble</span>.com</h1>
+        <p>A premium 18-year-old digital asset for the global gaming industry.</p>
+        
+        <a href="https://www.afternic.com/domain/rugamble.com" class="btn btn-afternic">PURCHASE VIA AFTERNIC</a>
+        <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">PURCHASE VIA SEDO</a>
+        
+        <div class="footer">SECURE TRANSFER GUARANTEED</div>
     </div>
 </body>
 </html>

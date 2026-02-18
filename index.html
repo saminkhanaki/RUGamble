@@ -3,69 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RUGamble.com | Premium Asset</title>
+    <title>Rugamble.com | Asset Test</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body, html { height: 100%; font-family: 'Georgia', serif; background-color: #000; overflow: hidden; }
-
-        /* پس‌زمینه با تصویر مستقیم و گرادینت رزرو */
-        .hero-bg { 
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), 
-                        url('bg.jpg');
-            background-size: cover; background-position: center; z-index: -1;
+        body, html { margin: 0; padding: 0; height: 100%; background-color: #050505; }
+        .bg-test {
+            width: 100%; height: 100%;
+            /* تصویر باکیفیت کازینو و رولت */
+            background-image: url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=1600&auto=format&fit=crop'); 
+            background-size: cover;
+            background-position: center;
         }
-
-        .container { height: 100vh; display: flex; align-items: center; justify-content: center; }
-
-        .premium-card { 
-            background: rgba(10, 10, 10, 0.95);
-            padding: 50px 35px; border-radius: 4px; text-align: center;
-            max-width: 450px; width: 90%;
-            border: 2px solid #d4af37;
-            box-shadow: 0 0 50px rgba(0,0,0,1);
-        }
-
-        .label { color: #d4af37; letter-spacing: 5px; font-size: 0.7em; margin-bottom: 20px; text-transform: uppercase; }
-        h1 { font-size: 2.6em; color: #fff; margin-bottom: 15px; }
-        .gold { color: #d4af37; }
-        p { color: #e0e0e0; margin-bottom: 35px; line-height: 1.7; font-style: italic; }
-
-        .btn { 
-            display: block; padding: 18px; margin: 15px 0; border-radius: 4px;
-            text-decoration: none; font-weight: bold; font-size: 1.1em;
-            transition: 0.3s; text-transform: uppercase; letter-spacing: 2px;
-        }
-
-        /* زرشکی لوکس برای Afternic */
-        .btn-afternic { 
-            background: linear-gradient(#8b0000, #4a0000);
-            color: #ffd700; border: 1px solid #d4af37;
-        }
-
-        /* سبز یشمی عمیق برای Sedo */
-        .btn-sedo { 
-            background: linear-gradient(#004d40, #00251a);
-            color: #fff; border: 1px solid #26a69a;
-        }
-
-        .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
-        .footer { margin-top: 30px; font-size: 0.7em; color: #d4af37; opacity: 0.8; letter-spacing: 2px; }
     </style>
 </head>
 <body>
-    <div class="hero-bg"></div>
-    <div class="container">
-        <div class="premium-card">
-            <div class="label">Exclusive Domain Offer</div>
-            <h1>RU<span class="gold">Gamble</span>.com</h1>
-            <p>Secure this high-stakes, 18-year-old digital asset. Perfect for elite gaming platforms and global casino networks.</p>
-            
-            <a href="https://www.afternic.com/domain/rugamble.com" class="btn btn-afternic">PURCHASE VIA AFTERNIC</a>
-            <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">PURCHASE VIA SEDO</a>
-            
-            <div class="footer">ESTABLISHED 2008 • SECURE TRANSFER</div>
-        </div>
-    </div>
+    <div class="bg-test"></div>
 </body>
 </html>

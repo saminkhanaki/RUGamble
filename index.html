@@ -3,103 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RUGamble.com | For Sale</title>
+    <title>RUGamble.com | Premium Domain</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; font-family: 'Arial', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100%; font-family: 'Segoe UI', Arial, sans-serif; background-color: #000; }
         
-        /* اصلاح تصویر پس‌زمینه برای وضوح بیشتر */
-        .bg { 
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
-                        url('https://images.unsplash.com/photo-1596838132731-dd36aae82731?q=80&w=1600&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .bg-overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1596838132731-dd36aae82731?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; z-index: -1;
         }
 
-        .container { 
-            background: rgba(20, 20, 20, 0.9);
-            color: #fff;
-            padding: 45px;
-            border-radius: 15px;
+        .wrapper { height: 100vh; display: flex; align-items: center; justify-content: center; }
+
+        .card { 
+            background: rgba(15, 15, 15, 0.95);
+            padding: 50px 30px;
+            border-radius: 20px;
             text-align: center;
-            max-width: 420px;
-            width: 85%;
-            /* درخشش طلایی ملایم دور کادر */
-            border: 2px solid #d4af37;
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            max-width: 420px; width: 90%;
+            border: 2px solid #d4af37; /* حاشیه طلایی براق */
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
         }
 
-        .status { 
-            color: #d4af37; 
-            font-weight: bold; 
-            font-size: 0.9em;
-            text-transform: uppercase; 
-            letter-spacing: 3px;
-            margin-bottom: 15px;
+        .status-tag { 
+            color: #d4af37; font-weight: 800; font-size: 0.8em;
+            text-transform: uppercase; letter-spacing: 4px; margin-bottom: 15px;
         }
 
-        h1 { 
-            font-size: 2.4em; 
-            margin-bottom: 15px;
-            color: #fff;
-        }
+        h1 { font-size: 2.3em; color: #fff; margin-bottom: 20px; }
+        .gold-text { color: #d4af37; }
 
-        .gold { color: #d4af37; }
-
-        p { 
-            color: #ccc; 
-            margin-bottom: 30px; 
-            line-height: 1.6;
-            font-size: 1.05em;
-        }
+        p { color: #ccc; margin-bottom: 35px; line-height: 1.6; font-size: 1.05em; }
 
         .btn { 
-            display: block; 
-            padding: 16px; 
-            margin: 12px 0; 
-            border-radius: 10px;
-            text-decoration: none; 
-            font-weight: bold; 
-            font-size: 1.1em;
-            transition: 0.3s;
+            display: block; padding: 18px; margin: 15px 0; border-radius: 12px;
+            text-decoration: none; font-weight: bold; font-size: 1.1em;
+            transition: 0.4s ease; text-transform: uppercase;
         }
 
-        /* دکمه آبی اختصاصی Afternic */
+        /* Afternic - Vivid Blue */
         .btn-afternic { 
-            background: #007bff; 
-            color: white; 
+            background: #007bff; color: white; 
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
         }
-        .btn-afternic:hover { background: #0056b3; }
+        .btn-afternic:hover { background: #0056b3; transform: translateY(-3px); }
 
-        /* دکمه سبز اختصاصی Sedo */
+        /* Sedo - Vibrant Green */
         .btn-sedo { 
-            background: #28a745; 
-            color: white; 
+            background: #2ecc71; color: white;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
         }
-        .btn-sedo:hover { background: #218838; }
+        .btn-sedo:hover { background: #27ae60; transform: translateY(-3px); }
 
-        .footer-note {
-            margin-top: 25px;
-            font-size: 0.8em;
-            color: #888;
-            text-transform: uppercase;
-        }
+        .escrow-text { margin-top: 25px; font-size: 0.75em; color: #777; letter-spacing: 1px; }
     </style>
 </head>
 <body>
-    <div class="bg">
-        <div class="container">
-            <div class="status">Premium Domain Asset</div>
-            <h1>RU<span class="gold">Gamble</span>.com</h1>
-            <p>Own a powerful, 18-year-old brand in the high-growth gaming industry. Secure and instant transfer available.</p>
+    <div class="bg-overlay"></div>
+    <div class="wrapper">
+        <div class="card">
+            <div class="status-tag">Premium Asset</div>
+            <h1>RU<span class="gold-text">Gamble</span>.com</h1>
+            <p>Secure this high-authority, 18-year-old gaming domain. Trusted by industry leaders for global betting and casino platforms.</p>
             
             <a href="https://www.afternic.com/domain/rugamble.com" class="btn btn-afternic">Buy via Afternic</a>
-            <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">Buy via Sedo</a>
+            <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">Purchase via Sedo</a>
             
-            <div class="footer-note">Secure Escrow Protection Guaranteed</div>
+            <div class="escrow-text">SECURE ESCROW & INSTANT TRANSFER</div>
         </div>
     </div>
 </body>

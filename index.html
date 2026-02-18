@@ -8,77 +8,71 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body, html { height: 100%; font-family: 'Georgia', serif; background-color: #0a0a0a; overflow: hidden; }
         
-        /* پس‌زمینه با تصویر میز کازینو و لایه رنگی زرشکی/مشکی */
+        /* تصویر پس‌زمینه با متد پشتیبان */
         .hero-bg { 
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(20,0,0,0.8) 0%, rgba(0,0,0,0.9) 100%), 
-                        url('https://images.unsplash.com/photo-1511193311914-0346f16fea90?q=80&w=1600&auto=format&fit=crop');
+            background: linear-gradient(135deg, rgba(20,0,0,0.85) 0%, rgba(0,0,0,0.95) 100%), 
+                        url('https://www.transparenttextures.com/patterns/black-linen.png'), /* بافت کمکی */
+                        url('https://images.pexels.com/photos/279009/pexels-photo-279009.jpeg?auto=compress&cs=tinysrgb&w=1600');
             background-size: cover; background-position: center; z-index: -1;
         }
 
         .container { height: 100vh; display: flex; align-items: center; justify-content: center; }
 
         .premium-card { 
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(10, 10, 10, 0.9);
             padding: 50px 35px;
-            border-radius: 5px;
+            border-radius: 8px;
             text-align: center;
             max-width: 440px; width: 90%;
-            border: 3px solid #d4af37; /* طلایی اصلی */
-            box-shadow: 0 0 50px rgba(212, 175, 55, 0.2), inset 0 0 20px rgba(212, 175, 55, 0.1);
+            border: 2px solid #d4af37; /* طلایی متالیک */
+            box-shadow: 0 0 60px rgba(0, 0, 0, 1);
             position: relative;
         }
 
-        /* خطوط تزئینی طلایی */
-        .premium-card::before {
-            content: ""; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
-            border: 1px solid rgba(212, 175, 55, 0.3); pointer-events: none;
-        }
-
         .label { 
-            color: #d4af37; font-weight: bold; font-size: 0.75em;
-            text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px;
+            color: #d4af37; font-weight: bold; font-size: 0.7em;
+            text-transform: uppercase; letter-spacing: 4px; margin-bottom: 20px;
         }
 
-        h1 { font-size: 2.5em; color: #fff; margin-bottom: 15px; letter-spacing: -1px; }
-        .gold { color: #d4af37; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5); }
+        h1 { font-size: 2.6em; color: #fff; margin-bottom: 15px; }
+        .gold { color: #d4af37; }
 
-        p { color: #e0e0e0; margin-bottom: 35px; line-height: 1.7; font-style: italic; }
+        p { color: #d0d0d0; margin-bottom: 35px; line-height: 1.7; font-style: italic; font-size: 1.05em; }
 
         .btn { 
-            display: block; padding: 18px; margin: 15px 0; border-radius: 3px;
+            display: block; padding: 18px; margin: 15px 0; border-radius: 4px;
             text-decoration: none; font-weight: bold; font-size: 1.1em;
-            transition: 0.3s; text-transform: uppercase; letter-spacing: 1px;
+            transition: 0.3s; text-transform: uppercase; letter-spacing: 2px;
         }
 
-        /* دکمه زرشکی متالیک برای Afternic */
+        /* دکمه زرشکی برای Afternic */
         .btn-afternic { 
-            background: linear-gradient(to bottom, #8b0000, #4a0000);
+            background: linear-gradient(180deg, #8b0000 0%, #5a0000 100%);
             color: #ffd700; border: 1px solid #d4af37;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
-        .btn-afternic:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3); }
+        .btn-afternic:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
         /* دکمه سبز یشمی برای Sedo */
         .btn-sedo { 
-            background: linear-gradient(to bottom, #004d40, #00251a);
-            color: #e0f2f1; border: 1px solid #26a69a;
+            background: linear-gradient(180deg, #004d40 0%, #00251a 100%);
+            color: #ffffff; border: 1px solid #26a69a;
         }
-        .btn-sedo:hover { transform: translateY(-2px); background: linear-gradient(to bottom, #00695c, #004d40); }
+        .btn-sedo:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
-        .secure-footer { margin-top: 30px; font-size: 0.7em; color: #d4af37; opacity: 0.7; }
+        .secure-footer { margin-top: 30px; font-size: 0.75em; color: #d4af37; letter-spacing: 1px; }
     </style>
 </head>
 <body>
     <div class="hero-bg"></div>
     <div class="container">
         <div class="premium-card">
-            <div class="label">Exclusive Offer</div>
+            <div class="label">Exclusive Domain Offer</div>
             <h1>RU<span class="gold">Gamble</span>.com</h1>
-            <p>A high-stakes, 18-year-old digital asset. Perfect for elite gaming platforms and global casino networks.</p>
+            <p>Secure this high-stakes, 18-year-old digital asset. Perfect for elite gaming platforms and global casino networks.</p>
             
-            <a href="https://www.afternic.com/domain/rugamble.com" class="btn btn-afternic">Acquire via Afternic</a>
-            <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">Purchase via Sedo</a>
+            <a href="https://www.afternic.com/domain/rugamble.com" class="btn btn-afternic">PURCHASE VIA AFTERNIC</a>
+            <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">PURCHASE VIA SEDO</a>
             
             <div class="secure-footer">ESTABLISHED 2008 • SECURE TRANSFER</div>
         </div>

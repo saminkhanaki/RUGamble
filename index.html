@@ -3,69 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rugamble.com is for Sale</title>
+    <title>RUGamble.com | Premium Gaming Domain for Sale</title>
     <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            background: #0f0f0f; 
-            background-image: radial-gradient(circle at center, #1e272e 0%, #000000 100%); 
-            height: 100vh; 
-            margin: 0; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            color: white; 
-            text-align: center; 
+        body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #000; }
+        
+        .bg { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1596838132731-dd36aae82731?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
         .container { 
-            border: 2px solid #e74c3c; 
-            padding: 50px; 
-            border-radius: 12px; 
-            box-shadow: 0 0 40px rgba(231, 76, 60, 0.3); 
-            background: rgba(0,0,0,0.85); 
-            max-width: 500px; 
+            background: #1a1a1a;
+            color: #fff;
+            padding: 50px 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+            max-width: 420px;
+            width: 90%;
+            border: 2px solid #d4af37; /* حاشیه طلایی */
         }
-        h1 { 
-            font-size: 3em; 
-            color: #e74c3c; 
-            margin: 0 0 10px 0; 
+
+        .status { 
+            color: #d4af37; 
+            font-weight: 800; 
+            font-size: 0.85em;
             text-transform: uppercase; 
-            letter-spacing: 4px; 
+            letter-spacing: 3px;
+            margin-bottom: 10px;
         }
+
+        h1 { 
+            color: #fff; 
+            font-size: 2.2em; 
+            margin: 0 0 15px 0;
+            word-break: break-all;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .highlight { color: #d4af37; }
+
         p { 
-            font-size: 1.2em; 
-            margin-bottom: 35px; 
-            color: #bdc3c7; 
+            color: #bbb; 
+            margin-bottom: 30px; 
+            font-size: 1em; 
+            line-height: 1.6;
         }
+
         .btn { 
-            background-color: #e74c3c; 
-            color: white; 
-            padding: 18px 50px; 
+            display: block; 
+            padding: 16px; 
+            margin: 12px 0; 
+            border-radius: 8px;
             text-decoration: none; 
-            font-size: 1.5em; 
-            border-radius: 5px; 
             font-weight: bold; 
-            transition: 0.3s; 
-            display: inline-block; 
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+            text-transform: uppercase;
         }
-        .btn:hover { 
-            background-color: #c0392b; 
-            box-shadow: 0 0 25px #e74c3c; 
-            transform: translateY(-3px); 
+
+        /* Afternic Button - Blue Gold accent */
+        .btn-afternic { 
+            background: #007bff; 
+            color: white; 
         }
-        .info { 
-            margin-top: 25px; 
-            font-size: 0.9em; 
-            color: #7f8c8d; 
+        .btn-afternic:hover { 
+            background: #0056b3; 
+            transform: scale(1.02);
+        }
+
+        /* Sedo Button - Green Gold accent */
+        .btn-sedo { 
+            background: #27ae60; 
+            color: white; 
+        }
+        .btn-sedo:hover { 
+            background: #1e8449; 
+            transform: scale(1.02);
+        }
+
+        .trust-badge {
+            margin-top: 25px;
+            font-size: 0.8em;
+            color: #d4af37;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>RUGAMBLE.COM</h1>
-        <p>Premium 18-Year-Old Gaming Domain is for Sale.</p>
-        <a href="https://www.afternic.com/domain/rugamble.com" class="btn">BUY NOW</a>
-        <div class="info">Secure transaction via Afternic</div>
+    <div class="bg">
+        <div class="container">
+            <div class="status">Premium Asset</div>
+            <h1>RU<span class="highlight">Gamble</span>.com</h1>
+            <p>A powerful, 18-year-old domain in the high-growth gaming and casino industry. Perfect for global platforms or affiliate networks.</p>
+            
+            <a href="https://www.afternic.com/domain/rugamble.com" class="btn btn-afternic">Buy Now at Afternic</a>
+            <a href="https://sedo.com/search/details/?domain=rugamble.com" class="btn btn-sedo">Purchase via Sedo</a>
+            
+            <div class="trust-badge">
+                SECURE TRANSACTION GUARANTEED
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
